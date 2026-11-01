@@ -48,31 +48,32 @@
       </div>
     </div>
   </nav>
-<!-- Hero Section -->
+
+  <!-- Hero Section -->
   <header class="max-w-6xl mx-auto px-6 pt-16 pb-20 border-b border-gray-800/80">
     <div class="flex flex-col md:flex-row items-start gap-8 sm:gap-10">
       
-      <!-- Profile Photo Frame (Left-aligned & Compact) -->
+      <!-- Profile Photo Frame -->
       <div class="flex-shrink-0">
         <div class="relative group">
           <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl blur opacity-30 group-hover:opacity-60 transition duration-300"></div>
           <div class="relative w-36 h-36 sm:w-44 sm:h-44 rounded-xl overflow-hidden border border-gray-700 bg-cardBg shadow-lg">
-            <img src="./profile.jpg" alt="Anto Varghese" class="w-full h-full object-cover grayscale contrast-110 hover:grayscale-0 transition duration-300" />
+            <img src="./profile.jpg" alt="Anto Varghese" class="w-full h-full object-cover grayscale contrast-110 hover:grayscale-0 transition duration-300" onerror="this.style.display='none'" />
           </div>
         </div>
       </div>
 
-      <!-- Bio & Action Links (Next to Photo) -->
+      <!-- Bio & Action Links -->
       <div class="max-w-3xl">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/60 border border-blue-800/50 text-blue-400 text-xs font-mono mb-4">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          Software Engineer (C++ / Go)
+          Software Engineer (C++ / Go / AI Workflows)
         </div>
         <h1 class="text-3xl sm:text-5xl font-bold tracking-tight text-white leading-tight">
           Anto Varghese
         </h1>
         <p class="mt-4 text-base sm:text-lg text-gray-400 font-normal leading-relaxed">
-          Building and scaling high-performance, multithreaded systems in <span class="text-white font-medium">C, C++</span>, and <span class="text-white font-medium">Go</span>. Experienced in monolith-to-microservices modernization, retail Point-of-Sale engines, and real-time traffic monitoring systems.
+          Building and scaling high-performance, multithreaded systems in <span class="text-white font-medium">C, C++</span>, and <span class="text-white font-medium">Go</span>, accelerated with modern <span class="text-white font-medium">AI tooling & prompt engineering</span>. Experienced in monolith-to-microservices modernization, retail Point-of-Sale engines, and real-time traffic monitoring systems.
         </p>
         
         <div class="mt-6 flex flex-wrap gap-4 text-xs font-mono">
@@ -89,6 +90,7 @@
 
     </div>
   </header>
+
   <!-- Summary Section -->
   <section id="about" class="max-w-6xl mx-auto px-6 py-20 border-b border-gray-800/80">
     <div class="text-xs font-mono uppercase tracking-widest text-blue-400 mb-2">Professional Summary</div>
@@ -136,7 +138,16 @@
         </p>
       </div>
 
-      <!-- Skill 3 -->
+      <!-- Skill 3: AI & Prompt Engineering -->
+      <div class="bg-cardBg border border-cardBorder p-6 rounded-xl hover:border-blue-500/50 transition">
+        <span class="material-symbols-outlined text-blue-400 text-2xl mb-3">psychology</span>
+        <h3 class="text-lg font-semibold text-white">AI & Prompt Engineering</h3>
+        <p class="mt-2 text-sm text-gray-400 leading-relaxed">
+          Prompt engineering, LLM workflow automation, API integration, and AI-assisted code generation & debugging in VS Code.
+        </p>
+      </div>
+
+      <!-- Skill 4 -->
       <div class="bg-cardBg border border-cardBorder p-6 rounded-xl hover:border-blue-500/50 transition">
         <span class="material-symbols-outlined text-blue-400 text-2xl mb-3">hub</span>
         <h3 class="text-lg font-semibold text-white">Microservices & Migration</h3>
@@ -145,7 +156,7 @@
         </p>
       </div>
 
-      <!-- Skill 4 -->
+      <!-- Skill 5 -->
       <div class="bg-cardBg border border-cardBorder p-6 rounded-xl hover:border-blue-500/50 transition">
         <span class="material-symbols-outlined text-blue-400 text-2xl mb-3">database</span>
         <h3 class="text-lg font-semibold text-white">Databases & Storage</h3>
@@ -154,21 +165,12 @@
         </p>
       </div>
 
-      <!-- Skill 5 -->
+      <!-- Skill 6 -->
       <div class="bg-cardBg border border-cardBorder p-6 rounded-xl hover:border-blue-500/50 transition">
         <span class="material-symbols-outlined text-blue-400 text-2xl mb-3">developer_board</span>
         <h3 class="text-lg font-semibold text-white">Embedded & Hardware Interfacing</h3>
         <p class="mt-2 text-sm text-gray-400 leading-relaxed">
           Embedded C/C++, Arduino robotics, sensor integration, and real-time passage detection logic.
-        </p>
-      </div>
-
-      <!-- Skill 6 -->
-      <div class="bg-cardBg border border-cardBorder p-6 rounded-xl hover:border-blue-500/50 transition">
-        <span class="material-symbols-outlined text-blue-400 text-2xl mb-3">terminal</span>
-        <h3 class="text-lg font-semibold text-white">Platforms & Tooling</h3>
-        <p class="mt-2 text-sm text-gray-400 leading-relaxed">
-          Linux, Windows development environments, Visual Studio IDE, Git version control, and CI workflows.
         </p>
       </div>
 
@@ -205,6 +207,7 @@
           <span class="px-2.5 py-1 rounded bg-cardBg border border-gray-800 text-gray-300">C</span>
           <span class="px-2.5 py-1 rounded bg-cardBg border border-gray-800 text-gray-300">GO</span>
           <span class="px-2.5 py-1 rounded bg-cardBg border border-gray-800 text-gray-300">MICROSERVICES</span>
+          <span class="px-2.5 py-1 rounded bg-cardBg border border-gray-800 text-gray-300">AI PROMPTING</span>
           <span class="px-2.5 py-1 rounded bg-cardBg border border-gray-800 text-gray-300">POS SYSTEMS</span>
         </div>
       </div>
@@ -238,7 +241,7 @@
   <!-- Projects Section -->
   <section id="projects" class="max-w-6xl mx-auto px-6 py-20 border-b border-gray-800/80">
     <div class="text-xs font-mono uppercase tracking-widest text-blue-400 mb-2">Key Highlights</div>
-    <h2 class="text-2xl sm:text-3xl font-bold text-white mb-10">Academic Projects</h2>
+    <h2 class="text-2xl sm:text-3xl font-bold text-white mb-10">Featured Projects</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       
@@ -259,7 +262,7 @@
         <p class="mt-2 text-sm text-gray-400 leading-relaxed">
           Arduino-based identification logging system utilizing RFID reader sensors for automated student check-ins.
         </p>
-        <a href="https://www.instructables.com/Automatic-Students-Attendance-System-Using-Arduino/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 mt-4 text-xs font-mono text-blue-400 hover:text-blue-300 transition">
+        <a href="url?id=63" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 mt-4 text-xs font-mono text-blue-400 hover:text-blue-300 transition">
           VIEW PROJECT SPECIFICATIONS <span class="material-symbols-outlined text-xs">arrow_forward</span>
         </a>
       </div>
@@ -274,11 +277,11 @@
         <span class="material-symbols-outlined text-blue-500 text-lg">terminal</span>
         ANTO VARGHESE
       </div>
-      <p class="text-xs text-gray-500 mt-1 font-mono">Specializing in high-performance backends and low-level systems.</p>
+      <p class="text-xs text-gray-500 mt-1 font-mono">Specializing in high-performance backends, low-level systems, and AI workflows.</p>
     </div>
 
     <div class="flex flex-wrap items-center gap-6 text-xs font-mono text-gray-400">
-      <a href="mailto:vargheseanto1996@gmail.com" class="hover:text-blue-400 flex items-center gap-1 transition">
+      <a href="url?id=61" class="hover:text-blue-400 flex items-center gap-1 transition">
         <span class="material-symbols-outlined text-sm">mail</span> vargheseanto1996@gmail.com
       </a>
       <a href="tel:+918301096870" class="hover:text-blue-400 flex items-center gap-1 transition">
