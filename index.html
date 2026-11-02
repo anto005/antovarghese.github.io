@@ -182,8 +182,7 @@
 
     </div>
   </section>
-
-  <!-- Certifications Section (Option 2) -->
+<!-- Certifications Section (Option 2) -->
   <section id="certifications" class="max-w-6xl mx-auto px-6 py-20 border-b border-gray-800/80">
     <div class="text-xs font-mono uppercase tracking-widest text-blue-400 mb-2">Verified Credentials</div>
     <h2 class="text-2xl sm:text-3xl font-bold text-white mb-10">Certifications & Badges</h2>
@@ -191,16 +190,30 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div class="bg-cardBg border border-cardBorder rounded-xl p-6 flex flex-col justify-between hover:border-blue-500/50 transition group">
         <div>
+          <!-- Header: Anthropic Icon & Issuer Badge -->
           <div class="flex items-center justify-between mb-4">
+            <div class="w-10 h-10 rounded-lg bg-[#D97757]/15 border border-[#D97757]/30 flex items-center justify-center p-2">
+              <!-- Anthropic Spark Logo -->
+              <svg class="w-full h-full text-[#D97757] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.827 3.518h3.916L24 20.482h-3.916l-1.464-3.666h-5.714l-1.464 3.666H7.526L13.827 3.518zm1.884 6.136l-1.802 4.514h3.604l-1.802-4.514zM0 20.482l6.299-16.964h3.918L3.918 20.482H0z"/>
+              </svg>
+            </div>
             <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-blue-950/60 border border-blue-800/50 text-blue-400 text-xs font-mono">
-              <span class="material-symbols-outlined text-sm">verified</span> Verified Credential
+              <span class="material-symbols-outlined text-sm">verified</span> Credly Verified
             </span>
-            <span class="text-xs font-mono text-gray-500">Credly</span>
           </div>
-          <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition">Professional Certification</h3>
-          <p class="mt-2 text-sm text-gray-400 leading-relaxed">
-            Officially verified digital credential issued via Credly demonstrating technical proficiency, coursework completion, and practical assessment.
-          </p>
+
+          <!-- Title & Issuer -->
+          <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition">
+            Claude Certified Developer - Foundations
+          </h3>
+          <div class="text-sm font-medium text-gray-300 mt-1">Anthropic</div>
+
+          <!-- Dates & Details -->
+          <div class="mt-3 text-xs font-mono text-gray-400 flex items-center gap-2">
+            <span class="material-symbols-outlined text-xs text-gray-500">calendar_today</span>
+            Issued Oct 2026 · Expires Oct 2027
+          </div>
         </div>
 
         <a href="https://www.credly.com/earner/earned/share/919d464b-45f4-442c-86c0-2d3c322ffc7f" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 mt-6 text-xs font-mono text-blue-400 hover:text-blue-300 transition">
@@ -209,67 +222,7 @@
       </div>
     </div>
   </section>
-
-  <!-- Experience Section (Career Trajectory) -->
-  <section id="experience" class="max-w-6xl mx-auto px-6 py-20 border-b border-gray-800/80">
-    <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10">
-      <div>
-        <div class="text-xs font-mono uppercase tracking-widest text-blue-400 mb-2">Career Trajectory</div>
-        <h2 class="text-2xl sm:text-3xl font-bold text-white">Work Experience</h2>
-      </div>
-      <div class="mt-2 sm:mt-0 text-xs font-mono text-gray-500 tracking-wider">7+ YEARS TOTAL</div>
-    </div>
-
-    <div class="space-y-12">
-      
-      <!-- Role 1 -->
-      <div class="border-l-2 border-blue-500 pl-6 sm:pl-8 relative">
-        <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-darkBg border-2 border-blue-500"></span>
-        <div class="flex flex-wrap items-baseline justify-between gap-2">
-          <h3 class="text-xl font-bold text-white">Software Engineer <span class="text-blue-400 font-normal">@ UST</span></h3>
-          <span class="text-xs font-mono text-gray-400">Jun 2024 – Present | Thiruvananthapuram</span>
-        </div>
-        <div class="text-xs font-mono text-gray-400 mt-1">Project: Keele (Retail Point-of-Sale)</div>
-        <ul class="mt-4 space-y-2 text-sm text-gray-300 list-disc list-outside pl-4">
-          <li>Architected and optimized high-throughput Point of Sale backend components in C and Go.</li>
-          <li>Stabilized mission-critical event-based monolithic systems, mitigating production crashes and latency spikes.</li>
-          <li>Led the decomposition of monolithic legacy architecture into maintainable, scalable microservices.</li>
-          <li>Constructed end-to-end data flow specifications and aligned development objectives with client requirements.</li>
-        </ul>
-        <div class="mt-4 flex flex-wrap gap-2 text-xs font-mono">
-          <span class="px-2.5 py-1 rounded bg-cardBg border border-gray-800 text-gray-300">C</span>
-          <span class="px-2.5 py-1 rounded bg-cardBg border border-gray-800 text-gray-300">GO</span>
-          <span class="px-2.5 py-1 rounded bg-cardBg border border-gray-800 text-gray-300">MICROSERVICES</span>
-          <span class="px-2.5 py-1 rounded bg-cardBg border border-gray-800 text-gray-300">AI PROMPTING</span>
-          <span class="px-2.5 py-1 rounded bg-cardBg border border-gray-800 text-gray-300">POS SYSTEMS</span>
-        </div>
-      </div>
-
-      <!-- Role 2 -->
-      <div class="border-l-2 border-gray-700 pl-6 sm:pl-8 relative">
-        <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-darkBg border-2 border-gray-600"></span>
-        <div class="flex flex-wrap items-baseline justify-between gap-2">
-          <h3 class="text-xl font-bold text-white">Software Engineer <span class="text-blue-400 font-normal">@ ARS Traffic & Transport Tech</span></h3>
-          <span class="text-xs font-mono text-gray-400">Feb 2020 – May 2024 | Technopark Trivandrum</span>
-        </div>
-        <div class="text-xs font-mono text-gray-400 mt-1">Projects: VACAm & TracoOWN, WIM, NDW, TVM SmartCity</div>
-        <ul class="mt-4 space-y-2 text-sm text-gray-300 list-disc list-outside pl-4">
-          <li>Designed multithreaded Windows Services in VC++ utilizing MFC, STL, and SQL engines for automated passage capture.</li>
-          <li>Implemented calculation engines for the VACAm Average Speed Enforcement System to detect trajectory violations between check gates.</li>
-          <li>Engineered Weigh-In-Motion (WIM) modules measuring real-time axle weight distribution to preserve road structural integrity.</li>
-          <li>Built high-reliability data capture services for the National Data Warehouse (NDW) traffic forecasting system.</li>
-        </ul>
-        <div class="mt-4 flex flex-wrap gap-2 text-xs font-mono">
-          <span class="px-2.5 py-1 rounded bg-cardBg border border-gray-800 text-gray-300">C++</span>
-          <span class="px-2.5 py-1 rounded bg-cardBg border border-gray-800 text-gray-300">MULTITHREADING</span>
-          <span class="px-2.5 py-1 rounded bg-cardBg border border-gray-800 text-gray-300">WINDOWS SERVICES</span>
-          <span class="px-2.5 py-1 rounded bg-cardBg border border-gray-800 text-gray-300">MFC / STL</span>
-          <span class="px-2.5 py-1 rounded bg-cardBg border border-gray-800 text-gray-300">SQL</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
+ 
 
   <!-- Projects Section -->
   <section id="projects" class="max-w-6xl mx-auto px-6 py-20 border-b border-gray-800/80">
