@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
   <script>
     tailwind.config = {
@@ -31,7 +30,7 @@
     }
   </script>
 </head>
-<body id="resume-container" class="bg-darkBg text-gray-200 font-sans antialiased selection:bg-blue-600 selection:text-white">
+<body class="bg-darkBg text-gray-200 font-sans antialiased selection:bg-blue-600 selection:text-white">
 
   <!-- Navigation -->
   <nav class="sticky top-0 z-50 bg-darkBg/90 backdrop-blur-md border-b border-gray-800">
@@ -45,7 +44,7 @@
         <a href="#skills" class="hover:text-blue-400 transition">SKILLS</a>
         <a href="#experience" class="hover:text-blue-400 transition">EXPERIENCE</a>
         <a href="#projects" class="hover:text-blue-400 transition">PROJECTS</a>
-        <a href="url?id=5" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded border border-blue-500/40 text-blue-400 hover:bg-blue-500/10 transition">LINKEDIN</a>
+        <a href="https://www.linkedin.com/in/anto-varghese-ba1716135/" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded border border-blue-500/40 text-blue-400 hover:bg-blue-500/10 transition">LINKEDIN</a>
       </div>
     </div>
   </nav>
@@ -82,10 +81,11 @@
             <span class="material-symbols-outlined text-sm">mail</span>
             GET IN TOUCH
           </a>
-          <button id="download-btn" onclick="generateResumePDF()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg border border-blue-500/40 bg-blue-950/30 hover:bg-blue-900/40 text-blue-400 font-semibold transition cursor-pointer">
+          <!-- Direct Google Doc to PDF Download Link -->
+          <a href="https://docs.google.com/document/d/19T4-DJBp114zrWjMyIwueG92sBArQfTXR_L_hitHlZs/export?format=pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg border border-blue-500/40 bg-blue-950/30 hover:bg-blue-900/40 text-blue-400 font-semibold transition cursor-pointer">
             <span class="material-symbols-outlined text-sm">download</span>
             DOWNLOAD RESUME
-          </button>
+          </a>
           <a href="https://www.linkedin.com/in/anto-varghese-ba1716135/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg border border-gray-700 bg-cardBg hover:bg-gray-800 text-gray-200 transition">
             <span class="material-symbols-outlined text-sm">open_in_new</span>
             VIEW LINKEDIN
@@ -256,7 +256,7 @@
         <p class="mt-2 text-sm text-gray-400 leading-relaxed">
           Integrated microcontroller automation enabling seamless voice recognition control over household and electronic utilities.
         </p>
-        <a href="url?id=85Voice-Controlled-Automation/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 mt-4 text-xs font-mono text-blue-400 hover:text-blue-300 transition">
+        <a href="https://www.instructables.com/Voice-Controlled-Automation/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 mt-4 text-xs font-mono text-blue-400 hover:text-blue-300 transition">
           VIEW PROJECT SPECIFICATIONS <span class="material-symbols-outlined text-xs">arrow_forward</span>
         </a>
       </div>
@@ -267,7 +267,7 @@
         <p class="mt-2 text-sm text-gray-400 leading-relaxed">
           Arduino-based identification logging system utilizing RFID reader sensors for automated student check-ins.
         </p>
-        <a href="url?id=95/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 mt-4 text-xs font-mono text-blue-400 hover:text-blue-300 transition">
+        <a href="https://www.instructables.com/Automatic-Students-Attendance-System-Using-Arduino/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 mt-4 text-xs font-mono text-blue-400 hover:text-blue-300 transition">
           VIEW PROJECT SPECIFICATIONS <span class="material-symbols-outlined text-xs">arrow_forward</span>
         </a>
       </div>
@@ -297,35 +297,6 @@
       </a>
     </div>
   </footer>
-
-  <!-- Direct In-Browser PDF Generation Script -->
-  <script>
-    function generateResumePDF() {
-      const btn = document.getElementById('download-btn');
-      const originalHTML = btn.innerHTML;
-      btn.innerHTML = '<span class="material-symbols-outlined text-sm animate-spin">sync</span> GENERATING...';
-      btn.disabled = true;
-
-      const element = document.getElementById('resume-container');
-      const opt = {
-        margin: [0.3, 0.3, 0.3, 0.3],
-        filename: 'Anto_Varghese_Resume.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2, useCORS: true, backgroundColor: '#0b0f17' },
-        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-      };
-
-      html2pdf().set(opt).from(element).save().then(() => {
-        btn.innerHTML = originalHTML;
-        btn.disabled = false;
-      }).catch(err => {
-        console.error(err);
-        btn.innerHTML = originalHTML;
-        btn.disabled = false;
-        window.print();
-      });
-    }
-  </script>
 
 </body>
 </html>
